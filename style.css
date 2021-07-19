@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  padding: 10px;
+}
+span {
+  font-size: 5rem;
+  color: rgb(220, 180, 255);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(255, 217, 0);
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: white;
+  padding: 50px 0 50px 0;
+}
+
+p {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 217, 0);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px 20px 0;
+  z-index: 5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.137);
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  max-width: 500px;
+  justify-content: space-between;
+}
+
+#dp {
+  width: 15%;
+  min-width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#welcome-section {
+  padding-top: 50px;
+  height: 100vh;
+  min-height: 500px;
+  background-color: blueviolet;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects {
+  background-color: #ff7200;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.project-tile {
+  width: 40%;
+  min-width: 330px;
+  max-width: 400px;
+  background-color: rgb(66, 66, 66);
+  margin: 20px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-out;
+}
+
+#projects h2 {
+  color: white;
+}
+
+.project-tile:hover {
+  transform: translateY(-10px);
+}
+
+.project-tile img {
+  max-width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.project-tile h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#get-connected img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+#get-connected {
+  background-color: aliceblue;
+}
+
+#get-connected h1,
+h2 {
+  padding-top: 100px;
+  color: rgb(54, 54, 54);
+  text-align: center;
+}
+
+#get-connected a {
+  margin-top: 50px;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  transition: border-radius 1s ease-out, box-shadow 0.3s ease-out;
+}
+
+#get-connected a:hover {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.082);
+}
+.sm {
+  display: flex;
+  width: 70%;
+  min-width: 600px;
+  max-width: 800px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#contact {
+  background-color: aliceblue;
+  padding-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#contact h2 {
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: rgb(255, 217, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.5rem;
+  width: 200px;
+  margin: 40px 0 0 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: rgb(255, 187, 0);
+}
+
+@media (max-width: 750px) {
+  .project-tile {
+    width: 75%;
+    max-width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .sm {
+    flex-direction: column;
+    align-items: center;
+    min-width: auto;
+  }
+  #get-connected a {
+    margin-top: 20px;
+  }
+  #navbar {
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: center;
+  }
+  #navbar ul {
+    width: 100%;
+  }
+}
